@@ -16,7 +16,6 @@ process.env.NODE_ENV = "production";
 app.get("/serve_file/@:file", (req, res, next) => {
   res.sendFile(__dirname + "/store/" + req.params.file + ".svg", err => {
     if (err) {
-      console.log(err);
       res.status(err.status).end();
     }
   });
