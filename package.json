@@ -1,26 +1,14 @@
 {
-  "name": "dotdevtools",
+  "name": "nodejs-express",
   "version": "1.0.0",
-  "description": "🖼 All assets used in Dot Browser's Developer Tools",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dot-browser/dotdevtools.git"
-  },
-  "builds": [
-    {
-      "src": "server.js",
-      "use": "@now/node-server"
-    }
-  ],
-  "author": "",
+  "main": "index.js",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dot-browser/dotdevtools/issues"
+  "dependencies": {
+    "express": "^4.16.4",
+    "xml": "^1.0.1",
+    "xmlbuilder": "^13.0.2"
   },
-  "homepage": "https://github.com/dot-browser/dotdevtools#readme"
+  "scripts": {
+    "start": "node ."
+  }
 }
