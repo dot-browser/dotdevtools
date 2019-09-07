@@ -11,6 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/dot-browser/dotdevtools.git"
   },
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@now/node-server"
+    }
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {
